@@ -7,11 +7,11 @@ docker build -t ursim-linux:<version> .
 ```
 ## Create a new network to run the docker container
 ```
-docker network create --subnet=192.168.0.0/16 ursim
+docker network create --subnet=192.100.0.0/16 ursim
 ```
 This will create a new network called `ursim` and all instances will be in the 192.168.0.0 subnet
 ## Run the Container
 ```
-docker run -d --net ursim --ip 192.168.0.100 ursim-linux:<version></version>
+docker run -d --net ursim --ip 192.100.0.100 --name ursim ursim-linux:<version></version>
 ```
 

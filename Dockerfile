@@ -1,4 +1,4 @@
-FROM universalrobots/ursim_e-series:5.5.1
+FROM universalrobots/ursim_e-series:5.12.5
 
 RUN apt-get update && apt-get install -y net-tools iputils-ping
 
